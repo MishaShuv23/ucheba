@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import os
 
-# --- Константы ---
-CSV_FILE = "/Users/mikhailsuvaev/Documents/GitHub/ucheba/app/data/moscow_places.csv"
+# Путь к CSV-файлу — относительно файла test_app.py
+CSV_FILE  = os.path.join(os.path.dirname(__file__), "..", "data", "moscow_places.csv")
 
 # Колонки в вашем CSV
 COL_NAME = 'name'
